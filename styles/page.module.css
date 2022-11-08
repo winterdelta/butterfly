@@ -1,0 +1,67 @@
+.main {
+	/* min-height: 100vh; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+}
+
+.content {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+	border-bottom: none;
+	border-top: none;
+	height: 100vh;
+	padding-top: 100px;
+}
+
+@media (max-width: 767px) {
+	.content {
+		width: 100%;
+	}
+}
+
+.code {
+	background: #fafafa;
+	border-radius: 5px;
+	padding: 0.75rem;
+	font-size: 1.1rem;
+	font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+		Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.mantra {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 100%;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	/* letter-spacing: 4px; */
+	/* text-indent: 4px; */
+	/* background-color: black; */
+	background: linear-gradient(to top, transparent, var(--deepgrey));
+	position: fixed;
+	top: 0px;
+	padding-bottom: 30px;
+	color: var(--blue);
+	font-size: 26px;
+	text-transform: uppercase;
+	z-index: 100;
+}
+
+.mantraEnglish {
+	color: var(--blue);
+	letter-spacing: 4px;
+	/* text-indent: 4px; */
+	font-size: 8px;
+	/* border-radius: 4px; */
+	/* border-top: 0.5px solid var(--blue); */
+	/* padding: 4px; */
+}

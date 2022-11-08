@@ -1,0 +1,155 @@
+.microphone {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 120px;
+	width: 100px;
+	border-radius: 40px;
+	background-color: var(--blue);
+	color: var(--deepgrey);
+	border: none;
+	cursor: pointer;
+}
+
+.microphoneButton {
+	border: none;
+	color: var(--deepgrey);
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.stopGlow {
+	animation: pulse 2s infinite;
+	border-radius: 100px;
+	color: var(--deepgrey);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	background-color: transparent;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 var(--deepgrey);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px var(--blue);
+	}
+
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 var(--blue);
+	}
+}
+
+.time {
+	font-style: italic;
+	margin-top: 20px;
+	color: var(--blue);
+	font-size: 14px;
+	letter-spacing: 1px;
+	background-color: transparent;
+	font-weight: bold;
+}
+
+.blinkingColon {
+	animation: blinker 2s step-start infinite;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
+
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.imageSearch {
+	border-radius: 40px;
+	border: none;
+	height: 50px;
+	width: 50px;
+	margin-left: 120px;
+	background-color: var(--blue);
+	color: var(--deepgrey);
+	cursor: pointer;
+}
+
+.lock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--gray);
+}
+
+.fileInput {
+	display: none;
+	z-index: 100;
+}
+
+.imageUploader {
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 40px;
+	border: none;
+	height: 50px;
+	width: 50px;
+	margin-left: 120px;
+	/* background-color: var(--blue); */
+	color: var(--blue);
+	cursor: pointer;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid var(--blue);
+}
+
+.transcript {
+	width: 250px;
+	border: 1px solid var(--blue);
+	background-color: transparent;
+	color: var(--gray);
+	padding: 16px;
+	border-radius: 30px;
+	font-size: 18px;
+	height: 200px;
+	margin-top: 20px;
+	resize: none;
+}
+
+.sendBtn {
+	color: var(--deepgrey);
+	background-color: var(--blue);
+	border: none;
+	height: 50px;
+	width: 250px;
+	border-radius: 10px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.encryptedConversation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	background-color: var(--blue);
+	height: 100%;
+	width: 100%;
+	margin-top: 30px;
+}
