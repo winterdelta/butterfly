@@ -230,7 +230,7 @@ export default function Form () {
 					)}
 				</div> */}
 			{transcription && (
-				<form onSubmit={handleSubmit(onSubmit)}>
+				<form className={styles.transForm} onSubmit={handleSubmit(onSubmit)}>
 					<textarea
 						value={transcription}
 						className={styles.transcript}

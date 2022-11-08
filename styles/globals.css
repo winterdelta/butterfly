@@ -49,3 +49,8 @@ button[disabled] {
 		background: var(--deepgrey);
 	}
 }
+
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
