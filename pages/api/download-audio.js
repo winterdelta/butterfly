@@ -4,7 +4,7 @@ const { Deepgram } = require('@deepgram/sdk')
 
 export default async function handler (req, res) {
   AWS.config.update({
-    accessKeyId: process.env.AWS_ACCESS_KEY_1,
+    accessKeyId: process.env.AWS_ACCESS_KEYYY,
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY_ID,
     region: 'us-east-2',
     signatureVersion: 'v4'

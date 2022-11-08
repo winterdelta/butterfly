@@ -8,7 +8,7 @@ import aws from 'aws-sdk'
 module.exports = async (req, res) => {
   try {
     aws.config.update({
-      accessKeyId: process.env.AWS_ACCESS_KEY_1,
+      accessKeyId: process.env.AWS_ACCESS_KEYYY,
       secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY_ID,
       region: 'us-east-2',
       signatureVersion: 'v4'
