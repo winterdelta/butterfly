@@ -27,32 +27,47 @@
 
 .mantra {
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
+	justify-content: flex-end;
+	align-items: flex-end;
 	flex-direction: column;
 	width: 100%;
-	padding-top: 10px;
-	padding-left: 10px;
+	/* padding-top: 10px;
+	padding-left: 10px; */
 	font-weight: bold;
 	/* letter-spacing: 4px; */
 	/* text-indent: 4px; */
 	/* background-color: black; */
-	background: linear-gradient(to top, transparent, var(--deepgrey));
+	/* background: linear-gradient(to top, transparent, var(--deepgrey)); */
 	position: fixed;
-	top: 0px;
-	padding-bottom: 30px;
-	color: var(--blue);
+	bottom: 20px;
+	right: 20px;
+	/* padding-bottom: 30px; */
+	color: var(--red);
 	font-size: 26px;
 	text-transform: uppercase;
 	z-index: 100;
 }
 
 .mantraEnglish {
-	color: var(--blue);
+	color: var(--red);
 	letter-spacing: 4px;
-	/* text-indent: 4px; */
+	text-indent: 4px;
 	font-size: 8px;
 	/* border-radius: 4px; */
 	/* border-top: 0.5px solid var(--blue); */
 	/* padding: 4px; */
+}
+
+/* .mantraUrdu {
+	margin-right: 4px;
+} */
+
+.mantraOutline {
+	border: 1px solid var(--red);
+	border-radius: 20px;
+	padding: 10px 10px 20px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
