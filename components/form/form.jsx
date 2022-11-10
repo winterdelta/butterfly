@@ -51,6 +51,7 @@ export default function Form () {
 		// Check if recording isn't blocked by browser
 		recorder.current.start().then(() => {
 			setIsRecording(true);
+			// if duration hits one minute, trigger stopRecording()
 		});
 	};
 
@@ -173,6 +174,7 @@ export default function Form () {
 				// router.reload()
 				setTranscription("");
 				setImage("")
+				setBlobUrl("")
 			} else {
 				throw new Error(await res.text());
 			}
@@ -229,9 +231,10 @@ export default function Form () {
 						</div>
 					)}
 				</div> */}
-			{transcription && (
-				<form className={styles.transForm} onSubmit={handleSubmit(onSubmit)}>
-					<textarea
+
+			<form className={styles.transForm} onSubmit={handleSubmit(onSubmit)}>
+				{transcription && (
+					<><textarea
 						value={transcription}
 						className={styles.transcript}
 						// @ts-ignore
@@ -240,13 +243,13 @@ export default function Form () {
 						})}
 						onChange={handleTextAreaChange}
 					></textarea>
-					<button className={styles.sendBtn} type='submit'>
+						<button className={styles.sendBtn} type='submit'>
+							<Fire size='24' />
+						</button>
+					</>)
+				}
+			</form>
 
-						<Fire size='24' />
-
-					</button>
-				</form>
-			)}
 			{/* <div className={styles.lock}>
 					<Locked size='16' />
 				</div> */}

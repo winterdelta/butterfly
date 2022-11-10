@@ -41,8 +41,8 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	backdrop-filter: blur(20px) brightness(0.4);
-	-webkit-backdrop-filter: blur(20px) brightness(0.4);
+	backdrop-filter: blur(30px) brightness(0.4);
+	-webkit-backdrop-filter: blur(30px) brightness(0.4);
 	height: 100%;
 	width: 100%;
 	padding: 30px 30px 0px 30px;
@@ -65,7 +65,7 @@
 .dateTime {
 	color: var(--gray);
 	margin-top: 120px;
-	font-size: 14px;
+	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 1px;
@@ -79,6 +79,7 @@
 	flex-direction: column;
 	color: var(--white);
 	line-height: 1.8em;
+	white-space: pre-wrap;
 	/* font-size: 20px; */
 }
 

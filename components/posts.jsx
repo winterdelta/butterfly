@@ -81,7 +81,10 @@ export default function Posts () {
 						</div>
 						<div className={styles.dateTime}>
 
-							{new Date(d.data?.datetime).toString()}
+							{/* {new Date(d.data?.datetime).toString()} */}
+
+							{new Date(d.data?.datetime).toLocaleTimeString()} - {" "}
+							{new Date(d.data?.datetime).toLocaleDateString()}
 
 						</div>
 						<div className={styles.textContainer}>
@@ -95,57 +98,57 @@ export default function Posts () {
 					</div>
 				))
 				: null}
-			<div
-				// style={{backgroundImage: `url("/cat.png")`,}}
+			{/* <div
+				style={{ backgroundImage: `url("/krewella.jpg")`, }}
 				className={styles.post}
 			>
-				{/* <div className={styles.frostedLayer}> */}
-				<div className={styles.imageContainer}>
-					<Image
-						className={styles.image}
-						style={{ objectFit: "cover" }}
-						alt=''
-						src='/krewella.jpg'
-						fill={true}
-						sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-					/>
-				</div>
-				<div className={styles.playBtn}>
-					{playing &&
-						trackPlaying ===
-						"http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" ? (
-						<button
-							className={styles.button}
-							onClick={() => {
-								setPlaying(false);
-							}}
-						>
-							<PauseFilled size='16' />
-						</button>
-					) : (
-						<button
-							className={styles.button}
-							onClick={() => {
-								setTrackPlaying(
-									"http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
-								);
-								setPlaying(true);
-							}}
-						>
-							<PlayFilledAlt size='16' />
-						</button>
-					)}
-				</div>
-				<div className={styles.dateTime}>
-					21:53 5 Nov 2022
-				</div>
-				<div className={styles.textContainer}>
-					<div className={styles.text}>
-						1MIN to go and counting.
+				<div className={styles.frostedLayer}>
+					<div className={styles.imageContainer}>
+						<Image
+							className={styles.image}
+							style={{ objectFit: "cover" }}
+							alt=''
+							src='/krewella.jpg'
+							fill={true}
+							sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+						/>
+					</div>
+					<div className={styles.playBtn}>
+						{playing &&
+							trackPlaying ===
+							"http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" ? (
+							<button
+								className={styles.button}
+								onClick={() => {
+									setPlaying(false);
+								}}
+							>
+								<PauseFilled size='16' />
+							</button>
+						) : (
+							<button
+								className={styles.button}
+								onClick={() => {
+									setTrackPlaying(
+										"http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
+									);
+									setPlaying(true);
+								}}
+							>
+								<PlayFilledAlt size='16' />
+							</button>
+						)}
+					</div>
+					<div className={styles.dateTime}>
+						21:53 5 Nov 2022
+					</div>
+					<div className={styles.textContainer}>
+						<div className={styles.text}>
+							1MIN to go and counting.
+						</div>
 					</div>
 				</div>
-				{/* </div> */}
-			</div>
+			</div> */}
 			<audio
 				// onLoadedMetadata={onLoadedMetadata}
 				// preload='auto'

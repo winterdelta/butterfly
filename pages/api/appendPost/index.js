@@ -13,7 +13,7 @@ module.exports = async (req, res) => {
     const dbs = await client.query(
       q.Create(q.Collection('chrysalis'), {
         data: {
-          transcript: transcription,
+          transcript: `${transcription ? transcription : ''}`,
           audio: audioURLFromS3,
           datetime: recordingTime,
           image: `${
