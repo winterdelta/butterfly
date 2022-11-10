@@ -37,7 +37,6 @@
 	/* letter-spacing: 4px; */
 	/* text-indent: 4px; */
 	/* background-color: black; */
-	/* background: linear-gradient(to top, transparent, var(--deepgrey)); */
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
@@ -63,11 +62,13 @@
 } */
 
 .mantraOutline {
-	border: 1px solid var(--red);
+	/* border: 1px dashed var(--red); */
 	border-radius: 20px;
 	padding: 10px 10px 20px 10px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	/* background-color: var(--red); */
+	/* background: linear-gradient(to top, transparent, var(--red)); */
 }
