@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-head-element */
 import styles from '../styles/page.module.css'
 import Form from '../components/form/form'
 import Posts from '../components/posts'
@@ -8,6 +9,12 @@ const arabic = Noto_Nastaliq_Urdu({ weight: '400', subsets: ['arabic'] })
 export default function Home () {
   return (
     <div>
+      <head>
+        <meta
+          property='og:image'
+          content='https://butterfly.winterdelta.com/api/og'
+        />
+      </head>
       <div className={styles.container}>
         <main className={styles.main}>
           <div className={styles.mantra}>
